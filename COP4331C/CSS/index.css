@@ -1,0 +1,114 @@
+/*Contains the form*/
+.Register{
+    margin: auto;
+    text-align: center;
+    text-shadow: black;
+    justify-content: center;
+    font-size: 24px;
+    outline-style: solid;
+    outline-color: lightgray;
+    border-radius: 15px;
+    height: 180px;
+    width: 240px;
+    color: white;
+}
+/*Container contains both Register div, and the Pictures div*/
+.Container{
+  outline-style: solid;
+  outline-color: lightgray;
+    height: 380px;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    border-radius: 15px;
+}
+.Pictures{
+    /*Here we are going to setup the images to change with time*/
+    /*animation: chbg 15s infinite;*/
+}
+#username_register{
+    font-size: 15px;
+}
+#password_register{
+    font-size: 15px;
+}
+/*Login Form*/
+.Login{
+    visibility: hidden; /*This will hide the Login div content */  /*Then create a script to show this login form when the button is clicked*/
+    text-align: center;
+    justify-self: center;
+}
+.Sub{
+    text-align: center;
+    justify-self: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: black;
+}
+/*
+.Register_btn:hover{
+    background-color: #e7e7e7; color: black;
+    font-size: 18px;
+    opacity: 1;
+}
+*/
+.Register_btn{
+    font-size: 16px;
+}
+.Click_btn{
+    font-size: 16px;
+}
+.Click_btn:hover{
+    background-color: #e7e7e7; color: black;
+    font-size: 24px;
+    opacity: 1;
+}
+button{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+    
+div{
+    resize: horizontal;
+    overflow: auto;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*animation: chbg 15s infinite;*/
+}
+
+/*
+Code to change pictures with time frame. Needed for the animation on
+the Div pictures
+@keyframes chbg {
+    0% {
+      background:url(http://lorempixel.com/100/100/people/1);
+    background-size:cover
+    }
+    20% {
+      background:url(http://lorempixel.com/100/100/people/7);
+    background-size:cover
+    }
+    40% {
+      background:url(http://lorempixel.com/100/100/people/6);
+    background-size:cover
+    }
+    60% {
+      background:url(http://lorempixel.com/100/100/people/2);
+    background-size:cover
+    }
+    80% {
+      background:url(http://lorempixel.com/100/100/people/9);
+    background-size:cover
+    }
+    100% {
+      background:url(http://lorempixel.com/100/100/people/8);
+    background-size:cover
+    }
+  }
+*/
