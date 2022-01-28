@@ -2,9 +2,9 @@
 	$inData = getRequestInfo();
 	
 	$FirstName = $inData["FirstName"];
-    $LastName = $inData["LastName"];
-    $PhoneNumber = $inData["PhoneNumber"];
-    $UserID = $inData["UserID"];
+    	$LastName = $inData["LastName"];
+    	$PhoneNumber = $inData["PhoneNumber"];
+    	$UserID = $inData["UserID"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
 	if ($conn->connect_error) 
@@ -18,7 +18,7 @@
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
-		returnWithError("");
+		returnWithError("Successfully added new contact");
 	}
 
 	function getRequestInfo()
