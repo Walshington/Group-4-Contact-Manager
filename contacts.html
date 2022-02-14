@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link href="css/styles.css" rel = "stylesheet">
+		<script type="text/javascript" src="js/ContactManager.js"></script>
+</head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+	 document.addEventListener('DOMContentLoaded', function()
+	 {
+    readCookie();
+    renderContactList();
+	 }, false);
+</script>
+
+
+<body>
+    <div class="hero">
+        <div class="theContainerThatHoldsBothDivs">
+            <div class="leftSide">
+                <!--<div class = "LogOut">
+                  <button type="button" id="LogOutBtnBtn" class="LogOutBtn" onclick="doLogout();"> <i class="fa fa-sign-out fa-flip-horizontal"></i></button>
+                </div>-->
+
+                <p class="leftTitle" id="userName"><b>Welcome, User</b></p>
+
+                <div id="toprow">
+                    <form class="Searching">
+                        <label for "Search_Contacts"><b></b></label>
+                        <input id = "Search_bar" type = "text" placeholder=" Search..." name = "Search_bar">
+                    </form>
+                    <button type="button" class="search-btn" onclick = "searchContact();"> Search </button>
+                    <button type="button" class="logOut-btn" onclick = "doLogout();"> Log Out </button>
+                </div>
+                <br></br>
+
+                <div class="DivWithTable" >
+                  <table class="contactTable" id="contactsTable">
+                    <thead>
+                      <tr>
+                        <th>Contacts</th>
+                        <th></th>
+                        <th>Phone Number</th>
+                        <th></th><th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                  </table>
+                </div>
+
+            </div>
+            <div class="rightSide">
+                <p class="rightTitle">Create a New Contact</p>
+                <form id="AddContactForm" class="formToContact">
+                    <input id="FirstName_contact" type="text" class="input-field" placeholder="First Name *" required>
+                    <input id="LastName_contact" type="text" class="input-field" placeholder="Last Name *" required>
+                    <input id="PhoneNumber_contact" type="text" class="input-field" placeholder="Phone Number *" required>
+                    <input type="checkbox" class="contact-chech-box"><span> Check this if you love COP4331 :)</span>
+                    <button type="button" class="submit-btn" onclick="AddContact();">Create</button>
+                    <span id="AddContactResult"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

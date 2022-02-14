@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link href="css/styles.css" rel = "stylesheet">
+		<script type="text/javascript" src="js/ContactManager.js"></script>
+</head>
+
+<body style="background-image: url('../images/lavaLamp.jpg');">
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="loginAnimation()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signAnimation()">Sign Up</button>
+            </div>
+            <form id="login" class="input-group">
+                <input id="username_login" type="text" class="input-field" placeholder="Username *" required>
+                <input id="password_login" type="password" class="input-field" placeholder="Password *" required>
+                <input type="checkbox" class="chech-box"><span> Promise you're not a robot :)</span>
+                <!--<label><br></br></label>-->
+                <button type="button" class="submit-btn" onclick="doLogin();">Log In</button>
+                <span id="loginResult"></span>
+            </form>
+
+            <form id="signUp" class="input-group">
+                <input id="FirstName" type="text" class="input-field" placeholder="First Name *" required>
+                <input id="LastName" type="text" class="input-field" placeholder="Last Name *" required>
+                <input id="PhoneNumber" type="text" class="input-field" placeholder="Phone Number *" required>
+                <input id="Login" type="text" class="input-field" placeholder="Username *" required>
+                <input id="Password" type="password" class="input-field" placeholder="Password *" required>
+                <!--<input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>-->
+                <button id="signUpBtn" type="button" class="submit-btn" onclick="Register();">Sign Up</button>
+
+                <span id="RegisteredPerson"></span><!--<br />-->
+
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signUp");
+        var z = document.getElementById("btn");
+
+        function signAnimation(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function loginAnimation(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function signAnimation2(){
+            x.style.left = "-126%";
+            y.style.left = "14%";
+            z.style.left = "50%";
+        }
+
+        function loginAnimation2(){
+            x.style.left = "14%";
+            y.style.left = "140%";
+            z.style.left = "0%";
+        }
+
+        function switchtoContacts(){
+            window.location.href = "contactsAndy.html";
+        }
+    </script>
+</body>
+
+</html>
